@@ -1,0 +1,15 @@
+
+// Tables
+// ------------------------------
+// Customizes the `.table` component with basic values, each used across all
+// table variations.
+
+$table-cell-padding:      0.75rem !default;
+$table-sm-cell-padding:   0.30rem !default;
+
+$table-bg:                transparent !default;
+$table-bg-accent:         #f9f9f9 !default;
+$table-bg-hover:          #f0f0f0 !default;
+$table-bg-active:         $table-bg-hover !default;
+
+$table-border-color:      $gray !default;

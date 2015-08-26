@@ -1,0 +1,39 @@
+
+.navbar {
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.60);
+}
+
+.navbar-collapse {
+
+  background-color: rgba(255, 255, 255, 0.60);
+
+  .container-fluid {
+    margin-top: 2.0rem;
+    padding: 1.5rem 2.0rem;
+    border-bottom: 1px solid #55595c;
+    > div {
+      margin-top: 1.5rem;
+    }
+
+    .about {
+      float: left;
+      max-width: 30rem;
+      margin-right: 4.00rem;
+    }
+    .social a {
+      font-weight: 500;
+      //color: #eceeef;
+      &:hover {
+        //color: #fff;
+      }
+    }
+
+  }
+  h4 {
+    //color: #818a91;
+  }
+  .text-muted {
+    // color: #818a91;
+  }
+}

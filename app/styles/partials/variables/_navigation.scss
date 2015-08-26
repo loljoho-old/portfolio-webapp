@@ -1,0 +1,46 @@
+/*! Bootstrap v4.0.0-alpha | MIT License | http://v4-alpha.getbootstrap */
+
+
+
+/* Navbar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$navbar-border-radius:        $border-radius !default;
+$navbar-padding-horizontal:   $spacer !default;
+$navbar-padding-vertical:     ($spacer / 2) !default;
+
+$navbar-dark-color:           rgba(255,255,255,.5);
+$navbar-dark-hover-color:     rgba(255,255,255,.75);
+$navbar-dark-active-color:    rgba(255,255,255,1);
+$navbar-dark-disabled-color:  rgba(255,255,255,.25);
+
+$navbar-light-color:          rgba(0,0,0,.3);
+$navbar-light-hover-color:    rgba(0,0,0,.6);
+$navbar-light-active-color:   rgba(0,0,0,.8);
+$navbar-light-disabled-color: rgba(0,0,0,.15);
+
+
+
+/* Nav
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$nav-link-padding:                            0.50em 1.00em !default;
+$nav-link-hover-bg:                           $gray-lighter !default;
+
+$nav-disabled-link-color:                     $gray-light !default;
+$nav-disabled-link-hover-color:               $gray-light !default;
+
+$nav-tabs-border-color:                       #ddd !default;
+
+$nav-tabs-link-hover-border-color:            $gray-lighter !default;
+
+$nav-tabs-active-link-hover-bg:               $body-bg !default;
+$nav-tabs-active-link-hover-color:            $gray !default;
+$nav-tabs-active-link-hover-border-color:     #ddd !default;
+
+$nav-tabs-justified-link-border-color:        #ddd !default;
+$nav-tabs-justified-active-link-border-color: $body-bg !default;
+
+$nav-pills-border-radius:                     $border-radius !default;
+$nav-pills-active-link-hover-bg:              $component-active-bg !default;
+$nav-pills-active-link-hover-color:           $component-active-color !default;

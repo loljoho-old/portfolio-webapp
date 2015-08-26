@@ -1,0 +1,33 @@
+/* Variables Stylesheet Module
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Z-index master list
+// ------------------------------
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+$zindex-navbar:         1000 !default;
+$zindex-dropdown:       1000 !default;
+$zindex-popover:        1060 !default;
+$zindex-tooltip:        1070 !default;
+$zindex-navbar-fixed:   1030 !default;
+$zindex-navbar-sticky:  1030 !default;
+$zindex-modal-bg:       1040 !default;
+$zindex-modal:          1050 !default;
+
+@import 'variables/colors';
+@import 'variables/typography';
+@import 'variables/global';
+@import 'variables/grid';
+@import 'variables/spacing';
+@import 'variables/navigation';
+@import 'variables/pagination';
+@import 'variables/buttons';
+@import 'variables/forms';
+@import 'variables/menus';
+@import 'variables/notifications';
+@import 'variables/tables';
+@import 'variables/lists';
+@import 'variables/carousel';
+@import 'variables/breadcrumbs';
+@import 'variables/components';

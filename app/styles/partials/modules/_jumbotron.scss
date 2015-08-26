@@ -1,0 +1,16 @@
+.jumbotron {
+
+  .container {
+    max-width: 40rem;
+  }
+
+  .jumbotron-heading {
+    margin-top: $jumbotron-padding;
+    font-weight: 300;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+}

@@ -1,0 +1,29 @@
+/* Core Stylesheet Module
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Base Rules
+// -------------------------------
+// Element, descendent, child selectors; pseudo-classes.
+
+@import 'core/base';
+
+
+// Layout Rules
+// -------------------------------
+// Page layout elements
+
+@import 'core/layout';
+
+
+// Media Queries
+// -------------------------------
+// Responsive & mobile styles
+
+@import 'core/media';
+
+
+// State Rules
+// -------------------------------
+// Javascript element states: toggle; change; etc.
+
+@import 'core/states';

@@ -1,0 +1,123 @@
+/*! Bootstrap v4.0.0-alpha | MIT License | http://v4-alpha.getbootstrap */
+
+
+
+/* Default Palette
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$brand-primary:           #002f6c;  //#0275d8;
+$brand-success:           #014225;  //#5cb85c;
+$brand-info:              #318ce7;  //#5bc0de;
+$brand-warning:           #ffb800;  //#f0ad4e;
+$brand-danger:            #cc0000;  //#d9534f;
+
+$gray-dark:               #222222;  //#373a3c;
+$gray:                    #444444;  //#55595c;
+$gray-light:              #666666;  //#818a91;
+$gray-lighter:            #c0c0c0;  //#eceeef;
+$gray-lightest:           #eeeeee;  //#f7f7f9;
+$gray-offwhite:           #f3f3f3;
+
+$black-base:              #000000;
+$white-base:              #ffffff;
+
+
+/* Text Contrast Opacity
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$black-primary:           rgba($black-base, 0.87);
+$black-secondary:         rgba($black-base, 0.54);
+$black-disabled:          rgba($black-base, 0.26);
+$black-dividers:          rgba($black-base, 0.12);
+
+$white-primary:           rgba($white-base, 1.00);
+$white-secondary:         rgba($white-base, 0.70);
+$white-disabled:          rgba($white-base, 0.30);
+$white-dividers:          rgba($white-base, 0.12);
+
+
+
+/* Form States
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$state-success-text:      lighten($brand-success, 25%);
+$state-success-bg:        lighten($brand-success, 75%); // #dff0d8;
+$state-success-border:    darken($state-success-bg, 5%);
+
+$state-info-text:         darken($brand-info, 25%);
+$state-info-bg:           lighten($brand-info, 25%);    // #d9edf7;
+$state-info-border:       darken($state-info-bg, 5%);
+
+$state-warning-text:      darken($brand-warning, 25%);
+$state-warning-bg:        lighten($brand-warning, 25%); // #8a6d3b;
+$state-warning-border:    darken($state-warning-bg, 5%);
+
+$state-danger-text:       darken($brand-danger, 25%);
+$state-danger-bg:         lighten($brand-danger, 25%);  // #a94442;
+$state-danger-border:     darken($state-danger-bg, 5%);
+
+
+
+/* Labels
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$label-default-bg:        $gray-light;
+$label-primary-bg:        $brand-primary;
+$label-success-bg:        $brand-success;
+$label-info-bg:           $brand-info;
+$label-warning-bg:        $brand-warning;
+$label-danger-bg:         $brand-danger;
+
+$label-color:             $white-base;
+$label-link-hover-color:  $white-base;
+
+
+
+/* Alerts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$alert-success-bg:        $state-success-bg !default;
+$alert-success-text:      $state-success-text !default;
+$alert-success-border:    $state-success-border !default;
+
+$alert-info-bg:           $state-info-bg !default;
+$alert-info-text:         $state-info-text !default;
+$alert-info-border:       $state-info-border !default;
+
+$alert-warning-bg:        $state-warning-bg !default;
+$alert-warning-text:      $state-warning-text !default;
+$alert-warning-border:    $state-warning-border !default;
+
+$alert-danger-bg:         $state-danger-bg !default;
+$alert-danger-text:       $state-danger-text !default;
+$alert-danger-border:     $state-danger-border !default;
+
+
+
+/* Progress Bars
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$progress-bg:             $gray-offwhite;
+$progress-bar-color:      $white-base;
+
+$progress-bar-bg:         $brand-primary !default;
+$progress-bar-success-bg: $brand-success !default;
+$progress-bar-warning-bg: $brand-warning !default;
+$progress-bar-danger-bg:  $brand-danger !default;
+$progress-bar-info-bg:    $brand-info !default;
+
+
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$code-color:              darken($brand-danger, 25%); //#bd4147;
+$code-bg:                 $gray-offwhite;             // #f7f7f9;
+
+$kbd-color:               $white-base !default;   // #ffffff
+$kbd-bg:                  $gray-dark !default;    // #333333
+
+$pre-bg:                  $gray-offwhite;         // #f7f7f9;
+$pre-color:               $gray-dark !default;
+
+
