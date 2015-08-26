@@ -19,7 +19,7 @@
     // -------------------------------
 
     getResume().done(function(data) {
-      $('.navbar-brand').text(data.title);
+      //$('.navbar-brand').text(data.title);
     });
 
   });
