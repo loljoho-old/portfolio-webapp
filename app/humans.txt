@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jonathan Ho -- Lead Developer -- @loljoho
+
+# THANKS
+
+    JK
+    WC
+    TF
+    AC
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Sass
+    Bootstrap-v4.0.0-alpha
+    jQuery, Modernizr, Normalize.css

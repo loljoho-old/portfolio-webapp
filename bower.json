@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha",
+    "jquery": "~1.11.3",
+    "modernizr": "~2.8.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js"
+      ]
+    }
+  },
+  "version": "0.1.0",
+  "homepage": "https://github.com/loljoho/portfolio",
+  "authors": [
+    "Jonathan Ho <joho@joho.io>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

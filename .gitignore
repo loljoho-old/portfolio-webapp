@@ -1,0 +1,153 @@
+# Gitignore by Joho
+# -------------------------------
+# Version v0.4.2
+# Created 17-Oct-2014
+# Updated 25-Aug-2015
+# http://git-scm.com/docs/gitignore
+
+
+# Project-Specific
+# -------------------------------
+resume.json
+
+
+# Bower & npm
+# -------------------------------
+bower_components
+node_modules
+npm-debug.log*
+
+# Build & Test
+# -------------------------------
+.tmp/
+build/
+dist/
+*.css.map
+.yo-rc.json
+.sass-cache/
+
+# Runtime Data & Generated Files
+# -------------------------------
+coverage/
+journal/
+lib-cov/
+logs/
+pids/
+report/
+results/
+*.out
+*.pid
+*.seed
+
+# Temporary files
+# -------------------------------
+temp
+tmp
+*.tmp
+*.tmp.*
+
+
+
+# User Environment Variables
+# -------------------------------
+!.env.example
+.env
+event.json
+
+# Amazon Web Services
+# -------------------------------
+*.aws
+.awspublish-*
+aws-sdk-all.js
+
+
+
+# Packages
+# -------------------------------
+*.7z
+*.ar
+*.apk
+*.app
+*.deb
+*.dmg
+*.iso
+*.msi
+*.pkg
+*.rar
+*.rpm
+*.tar
+*.tar.*
+*.xap
+*.zip
+
+# Logs & Database
+# -------------------------------
+*.lock
+*.0
+*.1
+*.ns
+*.csv
+*.dat
+*.log
+*.ldf
+*.mdf
+*.sdf
+*.sqlite
+
+
+
+# Windows
+# -------------------------------
+$RECYCLE.BIN/
+Desktop.ini
+Thumbs.db
+ehthumbs.db
+*.cab
+*.dll
+*.exe
+*.msm
+*.msp
+*.lnk
+
+# OSX & Linux
+# -------------------------------
+Icon?
+._*
+.*-V100
+.Apple*
+.DS_Store
+.LSOverride
+.TemporaryItems
+.Trash-*
+.Trashes
+.VolumeIcon.icns
+.apdisk
+.fseventsd
+.directory
+
+# Text Editor
+# -------------------------------
+sftp-config.json
+*~
+*.swo
+*.swp
+*.stTheme.cache
+*.sublime-project
+*.sublime-workspace
+*.tmlanguage.cache
+*.tmPreferences.cache
+
+
+
+# Miscellaneous
+# -------------------------------
+!.gitkeep
+.joho
+
+
+
+# -------------------------------
+#
+# end of file .gitignore
+#
+# -------------------------------

@@ -1,0 +1,171 @@
+body {
+  min-height: 75rem;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.60);
+}
+
+.navbar-collapse {
+
+  background-color: rgba(255, 255, 255, 0.60);
+
+  .container-fluid {
+    margin-top: 2.0rem;
+    padding: 1.5rem 2.0rem;
+    border-bottom: 1px solid #55595c;
+    > div {
+      margin-top: 1.5rem;
+    }
+
+    .about {
+      float: left;
+      max-width: 30rem;
+      margin-right: 4.00rem;
+    }
+    .social a {
+      font-weight: 500;
+      //color: #eceeef;
+      &:hover {
+        //color: #fff;
+      }
+    }
+
+  }
+  h4 {
+    //color: #818a91;
+  }
+  .text-muted {
+    // color: #818a91;
+  }
+}
+.jumbotron {
+  .container {
+    max-width: 40rem;
+  }
+  .jumbotron-heading {
+    margin-top: 2.00rem;
+    font-weight: 300;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.album {
+  min-height: 50rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  > img {
+    margin-bottom: .75rem;
+  }
+}
+.card-text {
+  font-size: 85%;
+}
+footer {
+  background-color: #222;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  p {
+    margin-bottom: 0.25rem;
+    color: $gray-lighter;
+  }
+  a {
+    color: lighten($brand-primary, 15%);
+    &:hover, &:active {
+      color: lighten($link-color, 25%);
+    }
+  }
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background-color: #222;
+  color: $gray-lighter;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+.marketing {
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+*/
