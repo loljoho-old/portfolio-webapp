@@ -21,6 +21,7 @@
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png?v=RyymvQbPrk">
   <link rel="icon" sizes="192x192" href="icon.png?v=RyymvQbPrk">
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <!-- endbower -->
@@ -65,9 +66,7 @@ __      __   _     ___              _                         _  _            __
 
   <!-- Site Navbar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <!-- Collapsible Section -->
-  <div class="navbar-collapse navbar-fixed-top collapse inverse"
+  <div class="navbar-collapse navbar-fixed-top collapse"
        id="navbar-header">
 
     <div class="container-fluid">
@@ -89,16 +88,46 @@ __      __   _     ___              _                         _  _            __
   </div>
 
 
-
-  <!-- Navbar Toggle
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header">
+
+      <button class="navbar-toggler pull-left" type="button"
+              data-toggle="collapse" data-target="#navbar-header">
         &#9776;
       </button>
+    <!--
+      &#xE5CF;
+      &#xE5CE;
+    -->
+
       <a href="#" class="navbar-brand">Jonathan Ho</a>
+
+
+      <button class="navbar-toggler hidden-md-up pull-right" type="button"
+              data-toggle="collapse" data-target="#navbar-links">
+        <i class="material-icons">&#xE5D4;</i>
+      </button>
+
+      <!-- TODO: Replace with Dropdown on xs/sm viewports -->
+      <div class="collapse navbar-toggleable-xs" id="navbar-links">
+
+        <ul class="nav navbar-nav pull-right">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#misc">Misc</a>
+          </li>
+        </ul>
+
+      </div>
+
     </div>
   </nav>
 
@@ -113,7 +142,14 @@ __      __   _     ___              _                         _  _            __
   <section class="jumbotron text-center">
     <div class="container">
       <h1 class="jumbotron-heading">Jonathan Ho</h1>
-      <p class="lead text-muted">AngularJS Application Development, Cross-Platform Responsive Design, AWS Cloud Computing, Perfect Gentleman.</p>
+
+      <ul class="list-group lead text-muted" id="skills">
+        <li class="list-group-item">AngularJS Development.</li>
+        <li class="list-group-item">Responsive Web Design.</li>
+        <li class="list-group-item">AWS Cloud Computing.</li>
+        <li class="list-group-item">Perfect Gentleman.</li>
+      </ul>
+
       <p>
         <a href="#" class="btn btn-primary">Résumé</a>
         <a href="#" class="btn btn-secondary">Portfolio</a>
@@ -123,9 +159,10 @@ __      __   _     ___              _                         _  _            __
 
 
 
+
   <!-- Album Cards
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="album text-muted">
+  <div class="album text-muted" id="work">
     <div class="container">
 
       <div class="row">
@@ -141,7 +178,6 @@ __      __   _     ___              _                         _  _            __
           <img src="http://placehold.it/280x100/55595c/eceeef?text=Thumbnail" alt="Card image cap">
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
-
         <div class="card">
           <img src="http://placehold.it/280x100/55595c/eceeef?text=Thumbnail" alt="Card image cap">
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -154,7 +190,6 @@ __      __   _     ___              _                         _  _            __
           <img src="http://placehold.it/280x100/55595c/eceeef?text=Thumbnail" alt="Card image cap">
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
-
         <div class="card">
           <img src="http://placehold.it/280x100/55595c/eceeef?text=Thumbnail" alt="Card image cap">
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -173,18 +208,18 @@ __      __   _     ___              _                         _  _            __
   </div>
 
 
-
   <!-- Site Footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <footer class="text-muted">
     <div class="container">
       <p class="pull-right">
-        <a href="#">Back to top</a>
+        <a href="#">Top</a>
       </p>
       <p>Copyright &copy; 2015, Jonathan Ho</p>
-      <p>Built with love using <a href="https://developers.google.com/web/tools/starter-kit">Jonathan Ho</a> and <a href="v4-alpha.getbootstrap.com">Bootstrap v4.0.0-alpha</a>.</p>
+      <p>Built with love using <a href="https://developers.google.com/web/tools/starter-kit">Web Starter Kit</a> and <a href="v4-alpha.getbootstrap.com">Bootstrap v4.0.0-alpha</a>.</p>
     </div>
   </footer>
+  <div id="misc"></div>
 
 
 

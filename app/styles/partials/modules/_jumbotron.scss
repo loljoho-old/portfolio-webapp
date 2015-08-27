@@ -1,16 +1,31 @@
 .jumbotron {
+  padding: 2.00rem 0;
 
   .container {
     max-width: 40rem;
   }
 
   .jumbotron-heading {
-    margin-top: $jumbotron-padding;
+    padding-top: 3.00rem;
+    margin-top: 2.00rem;
     font-weight: 300;
+  }
+
+  .list-group {
+    margin-top: 1.00rem;
+    .list-group-item {
+      background: transparent;
+      border: none;
+      padding: 0.25rem;
+      &:last-child {
+        margin-bottom: 0.50rem;
+      }
+    }
   }
 
   p:last-child {
     margin-bottom: 0;
+    padding-bottom: 3.00rem;
   }
 
 }
