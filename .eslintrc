@@ -1,0 +1,25 @@
+{
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "globals": {
+    "$": true,
+    "jQuery": true,
+    "Modernizr": true
+  },
+  "rules": {
+    "brace-style": [2, "stroustrup"],
+    "camelcase": 0,
+    "key-spacing": 0,
+    "new-cap": 1,
+    "no-extra-strict": 1,
+    "no-unused-vars": [2, {"vars": "local", "args": "none"}],
+    "no-use-before-define": 0,
+    "no-underscore-dangle": 0,
+    "no-new": 0,
+    "quotes": [1, "single", "avoid-escape"],
+    "semi": [2, "always"],
+    "strict": 2
+  }
+}
