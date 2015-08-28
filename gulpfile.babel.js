@@ -7,21 +7,41 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 import gulp from 'gulp';
-import gulpLoadPlugins from 'gulp-load-plugins';
-import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
 
-// Configuration File
-import * as conf from './gulp/conf.babel';
 
-const $       = gulpLoadPlugins();
-const reload  = browserSync.reload;
+// Load Gulp-* Plugins
+// ------------------------------
+
+import gulpLoadPlugins from 'gulp-load-plugins';
+const $ = gulpLoadPlugins();
+
+
+// Comment Wrapper
+// ------------------------------
+
+import * as common from './gulp/common';
+const commentHeader = common.createComments($.util);
+
+
+// Configuration
+// ------------------------------
+
+import * as conf from './gulp/conf';
+
+
+// Browser-Sync
+// ------------------------------
+
+import browserSync from 'browser-sync';
+const reload = browserSync.reload;
 
 
 
 /* Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 const sassSyncOptions = {
   outputStyle   : 'expanded',
   precision     : 10,
@@ -58,7 +78,7 @@ gulp.task('styles', () => {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 function lint(files, options) {
-  $.util.log($.util.colors.blue('Scripts task...'));
+  $.util.log($.util.colors.yellow('Scripts task...'));
   return () => {
     return gulp.src(files)
       .pipe(reload({
@@ -66,7 +86,8 @@ function lint(files, options) {
         once    : true
       }))
       .pipe($.eslint(options))
-      .pipe($.eslint.format())
+      .pipe($.eslint.format('eslint-stylish'))
+      //.pipe($.eslint.reporter())
       .pipe($.if(!browserSync.active, $.eslint.failAfterError()));
   };
 }
@@ -83,7 +104,7 @@ const testLintOptions = {
 
 gulp.task('lint', lint(conf.src.scripts));
 
-//gulp.task('lint:test', (conf.src.tests));//, testLintOptions));
+gulp.task('lint:test', lint(conf.src.tests));
 
 
 
@@ -91,7 +112,6 @@ gulp.task('lint', lint(conf.src.scripts));
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 gulp.task('html', ['styles'], () => {
-  $.util.log($.util.colors.blue('HTML task...'));
   const assets = $.useref.assets({
     searchPath: [
       conf.paths.tmp,
@@ -102,16 +122,17 @@ gulp.task('html', ['styles'], () => {
 
   return gulp.src(conf.src.html)
     .pipe(assets)
-    .pipe($.if('*.js', $.uglify()))
+    .pipe($.if('*.js', $.uglify(), $.header(commentHeader)))
     .pipe($.if('*.css', $.minifyCss({
       compatibility: '*'
-    })))
+    }), $.header(commentHeader)))
     .pipe(assets.restore())
     .pipe($.useref())
     .pipe($.if('*.html', $.minifyHtml({
       conditionals: true,
       loose: true
     })))
+    .pipe($)
     .pipe(gulp.dest(conf.paths.dist));
 });
 
@@ -144,7 +165,7 @@ gulp.task('images', () => {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 gulp.task('fonts', () => {
-  $.util.log($.util.colors.blue('Fonts task...'));
+  $.util.log($.util.colors.gray('Fonts task...'));
   return gulp.src(
     require('main-bower-files')({
       filter: '**/*.{eot,svg,ttf,woff,woff2}'
@@ -244,6 +265,7 @@ gulp.task('wiredep', () => {
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)+/
     }))
+    .pipe($.header(commentHeader))
     .pipe(gulp.dest('app/styles'));
 
   gulp.src(conf.src.html)
@@ -251,6 +273,7 @@ gulp.task('wiredep', () => {
       exclude: ['jquery'],
       ignorePath: /^(\.\.\/)*\.\./
     }))
+    .pipe($.header(commentHeader))
     .pipe(gulp.dest(conf.paths.src));
 });
 
@@ -260,7 +283,7 @@ gulp.task('wiredep', () => {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
-  $.util.log($.util.colors.blue('Build task...'));
+  $.util.log($.util.colors.orange('Build task...'));
   return gulp.src(conf.src.build)
     .pipe($.size({
       title: 'build',
