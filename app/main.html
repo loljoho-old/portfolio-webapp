@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]>     <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>        <html class="no-js lt-ie9 lt-ie8" lang="en">        <![endif]-->
+<!--[if IE 8]>        <html class="no-js lt-ie9" lang="en">               <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en">                  <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +15,25 @@
 
   <!-- Site Title -->
   <title>
-    joho.io
+    Jonathan Ho &middot; Developer &middot; New York NY
   </title>
 
-  <!-- Bootstrap Stylesheet -->
-  <link href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" rel="stylesheet">
+  <!-- Web Application Manifest -->
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png?v=RyymvQbPrk">
+  <link rel="icon" sizes="192x192" href="icon.png?v=RyymvQbPrk">
 
-  <!-- Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,600" rel="stylesheet" type="text/css">
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
-  <!-- Custom Styles -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
   <style>
     html, body {
       font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; }
@@ -115,7 +127,7 @@ __      __   _     ___              _                         _  _            __
 
   <!-- Site Navbar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="navbar-collapse collapse inverse" id="navbar-header">
+  <div class="navbar-collapse navbar-fixed-top collapse inverse" id="navbar-header">
     <div class="container-fluid">
       <div class="about">
         <h4>About</h4>
@@ -225,7 +237,23 @@ __      __   _     ___              _                         _  _            __
 
   <!-- Javascript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <!-- jQuery CDN with local fallback -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.js"><\/script>')</script>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -234,7 +262,6 @@ __      __   _     ___              _                         _  _            __
     ga('create', 'UA-64890405-1', 'auto');
     ga('send', 'pageview');
   </script>
-  <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
 
 
 

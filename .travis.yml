@@ -12,6 +12,7 @@ matrix:
 branches:
   only:
     - master
+    - release
 
 before_script:
   - npm install gulp -g

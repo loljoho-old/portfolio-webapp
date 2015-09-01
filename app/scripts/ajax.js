@@ -1,5 +1,6 @@
 (function(main) {
   'use strict';
+
   // Pass global jQuery obj as param
   main(window.jQuery, window, document);
 }(function($, window, document) {
@@ -7,11 +8,10 @@
 
   // Locally scoped $
 
-
   // Document Ready
   // -------------------------------
-
   $(function() {
+
 
 
     // Retrieve Brand Text
@@ -21,7 +21,6 @@
       $('.navbar-brand').text(data.title);
     });
 
-
   });
 
 
@@ -30,14 +29,13 @@
   // -------------------------------
 
   function getResume() {
-
     return $.ajax({
       url       : "data/test.json",
       type      : 'GET',
       dataType  : 'json'
     });
-
   }
+
 
 
 }));

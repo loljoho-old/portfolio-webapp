@@ -86,8 +86,7 @@ function lint(files, options) {
         once    : true
       }))
       .pipe($.eslint(options))
-      .pipe($.eslint.format('eslint-stylish'))
-      //.pipe($.eslint.reporter())
+      .pipe($.eslint.format())
       .pipe($.if(!browserSync.active, $.eslint.failAfterError()));
   };
 }
@@ -265,7 +264,6 @@ gulp.task('wiredep', () => {
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)+/
     }))
-    .pipe($.header(commentHeader))
     .pipe(gulp.dest('app/styles'));
 
   gulp.src(conf.src.html)
@@ -273,7 +271,6 @@ gulp.task('wiredep', () => {
       exclude: ['jquery'],
       ignorePath: /^(\.\.\/)*\.\./
     }))
-    .pipe($.header(commentHeader))
     .pipe(gulp.dest(conf.paths.src));
 });
 
